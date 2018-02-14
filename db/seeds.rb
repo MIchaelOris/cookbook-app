@@ -8,3 +8,21 @@ Recipe.create!([
   {chef: "Josh", title: "Egg", ingredients: "chicken", directions: "squeeze chicken", image_url: "https://boost-rankedboost.netdna-ssl.com/wp-content/uploads/2016/07/Pokemon-Go-Egg.png", prep_time: 4},
   {chef: "Garfield", title: "Lasagna", ingredients: "noodles, tomato paste, meat, onions, garlic, other stuff", directions: "layer noodles, add sauce, layer noodles, add meat, layer noodles, add onions, layer noodles, add other stuff, finish with a layer of noodles", image_url: "https://m.popkey.co/1e0d43/Vo6a3.gif", prep_time: 60}
 ])
+
+Category.create(name: "Cheap")
+Category.create(name: "Junk Food")
+Category.create(name: "Edible")
+
+CategoryRecipe.create([
+  
+  {category_id: 1, recipe_id: 2},
+  {category_id: 1, recipe_id: 5}
+  {category_id: 2, recipe_id: 2}
+  {category_id: 2, recipe_id: 4}
+  {category_id: 2, recipe_id: 6}
+  {category_id: 3, recipe_id: 1}
+  {category_id: 3, recipe_id: 3}
+  {category_id: 3, recipe_id: 4}
+  {category_id: 3, recipe_id: 5}
+
+  ])
